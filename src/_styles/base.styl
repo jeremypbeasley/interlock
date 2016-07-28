@@ -12,7 +12,6 @@ body
   overflow-y auto
   overflow-x hidden
   margin 0
-  background #f2f2f2
   padding-bottom 10vw
   
 .hidden
@@ -21,15 +20,28 @@ body
  
 .Logo {
   position: fixed;
-  left: 0px;
-  top: unit9;
+  left: unit3;
+  top: 100px;
   transform: rotate(-90deg);
   font-weight: bold;
 } 
+.GitHubLink {
+  text-indent: -999999px;
+  height: unit4;
+  width: unit4; 
+  background: url("https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-256.png")
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  top: unit8;
+  right: unit8;
+  z-index: 999999;
+}
 .GlobalNav {
   position: absolute;
   top: unit4;
   left: unit4;
+  
 }
 .GlobalNav ul, li {
   list-style: none;
@@ -37,6 +49,7 @@ body
   margin: 0;
   font-family: typeface-secondary;
   font-size: 1rem;
+  display: none;
 }
 .GlobalNav ul li {
   display: inline-block;
@@ -44,7 +57,7 @@ body
 }
 @media laptop {
   .GlobalNav {
-    left: 7vw;
+    left: 9vw;
   }
 }
 .ColumnLeft {
@@ -53,8 +66,8 @@ body
 }
 @media laptop {
   .ColumnLeft {
-    margin: 7vw;
-    width: 50%;
+    margin: 9vw;
+    width: 40%;
   }
 }
 .Intro {
@@ -63,17 +76,19 @@ body
 }
 @media laptop {
   .Intro {
-    min-height: calc(100vh - 7vw);
+    min-height: calc(100vh - 18vw);
     width: 60%;
+    margin-left: 30%;
   }
 }
 .Intro h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 0;
 }
 code {
-  width: 120%;
+  width: 100%;
   height: 400px;
   display: block;
   background: black;

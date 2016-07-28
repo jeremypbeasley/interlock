@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
   <link href="master.css" rel="stylesheet">
-  <script src="master.js"></script>
+  
 </head>
 <body>
 
 <header>
 	<nav class="GlobalNav">
-		<div class="Logo">InterlockJS</div>
+		<div class="Logo"><a href="">InterlockJS</a></div>
+		<a class="GitHubLink NoLine" href="https://github.com/interlockjs/interlock">Github</a>
 		<ul>
 	  	<li><a href="">Quick Start</a></li>
 	  	<li><a href="">Documentation</a></li>
@@ -21,7 +22,41 @@
 	  </ul>
 	</nav>
 </header>
-<div class="Blocks"></div>
+<div class="blocksplayground" id="blockplayground">
+  <div class="block1 blockshape">
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+  </div>
+  <div class="block2 blockshape">
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+  </div>
+  <div class="block3 blockshape">
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+  </div>
+  <div class="block4 blockshape">
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+  </div>
+  <div class="block5 blockshape">
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+    <div class="blockpixel"></div>
+  </div>
+</div>
 <section class="Intro ColumnLeft">
 	<h1 class="Giant"><a href="https://github.com/interlockjs/interlock">InterlockJS</a> is a build tool for universal javascript and beyond.</h1>
 </section>
@@ -35,14 +70,14 @@
 	<h2 class="mb5">Powerful extensibility.</h2>
 	<p class="mb4 mt4">The core of Interlock is very small - many features that Interlock provides are implemented as plugins. All compilation steps are fully documented with an exploratory interface, and plugins tend to be short and sweet.</p>
 	<p class="mb6 mt4">Interlock makes no distinction between "loaders" and "plugins". Ultimately, both effect the output of the build, and a separate And with other tools, the line has often become rather blurry, in practice.</p>
-	<div class="ButtonsCont mb6">
+	<div class="ButtonsCont mb8">
 		<a href="" class="NoLine"><button class="mr3">Documentation</button></a>
 		<a href="" class="NoLine"><button>Plugin Examples</button></a>
 	</div>
 	<code></code>
 </section>
 
-
+<script src="master.js"></script>
 
 <footer class="ColumnLeft">
 	<p>© Dale Bustad. All Rights Reserved.</p>

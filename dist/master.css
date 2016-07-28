@@ -472,6 +472,11 @@ h1 {
   font-style: italic;
   font-weight: bold;
 }
+@media (min-width: 62em) {
+  h1 {
+    font-size: 5.5vw;
+  }
+}
 h1 a {
   border-bottom: 1px solid #000;
   color: #000;
@@ -716,7 +721,6 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0;
-  background: #f2f2f2;
   padding-bottom: 10vw;
 }
 .hidden {
@@ -725,10 +729,22 @@ body {
 }
 .Logo {
   position: fixed;
-  left: 0px;
-  top: 72px;
+  left: 24px;
+  top: 100px;
   transform: rotate(-90deg);
   font-weight: bold;
+}
+.GitHubLink {
+  text-indent: -999999px;
+  height: 32px;
+  width: 32px;
+  background: url("https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-256.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  top: 64px;
+  right: 64px;
+  z-index: 999999;
 }
 .GlobalNav {
   position: absolute;
@@ -742,6 +758,7 @@ li {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 1rem;
+  display: none;
 }
 .GlobalNav ul li {
   display: inline-block;
@@ -749,7 +766,7 @@ li {
 }
 @media (min-width: 62em) {
   .GlobalNav {
-    left: 7vw;
+    left: 9vw;
   }
 }
 .ColumnLeft {
@@ -758,8 +775,8 @@ li {
 }
 @media (min-width: 62em) {
   .ColumnLeft {
-    margin: 7vw;
-    width: 50%;
+    margin: 9vw;
+    width: 40%;
   }
 }
 .Intro {
@@ -768,18 +785,130 @@ li {
 }
 @media (min-width: 62em) {
   .Intro {
-    min-height: calc(100vh - 7vw);
+    min-height: calc(100vh - 18vw);
     width: 60%;
+    margin-left: 30%;
   }
 }
 .Intro h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 0;
 }
 code {
-  width: 120%;
+  width: 100%;
   height: 400px;
   display: block;
   background: #000;
+}
+.blocksplayground {
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  top: 0px;
+}
+.blockshape {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin: 30px;
+  position: absolute;
+  top: -200px;
+}
+.blockpixel {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  position: absolute;
+  background: #000;
+}
+.block1 {
+  width: 60px;
+  height: 60px;
+}
+.block1 .blockpixel:nth-child(2) {
+  left: 30px;
+}
+.block1 .blockpixel:nth-child(3) {
+  top: 30px;
+}
+.block1 .blockpixel:nth-child(4) {
+  left: 30px;
+  top: 30px;
+}
+.block2 {
+  width: 30px;
+  height: 150px;
+}
+.block2 .blockpixel:nth-child(2) {
+  top: 30px;
+}
+.block2 .blockpixel:nth-child(3) {
+  top: 60px;
+}
+.block2 .blockpixel:nth-child(4) {
+  top: 90px;
+}
+.block2 .blockpixel:nth-child(5) {
+  top: 120px;
+}
+.block2 .blockpixel:nth-child(6) {
+  top: 150px;
+}
+.block3 {
+  width: 90px;
+  height: 60px;
+}
+.block3 .blockpixel:nth-child(1) {
+  top: 30px;
+}
+.block3 .blockpixel:nth-child(2) {
+  top: 30px;
+  left: 30px;
+}
+.block3 .blockpixel:nth-child(3) {
+  left: 30px;
+}
+.block3 .blockpixel:nth-child(4) {
+  left: 60px;
+  top: 30px;
+}
+.block4 {
+  width: 60px;
+  height: 90px;
+}
+.block4 .blockpixel:nth-child(1) {
+  left: 30px;
+}
+.block4 .blockpixel:nth-child(2) {
+  top: 30px;
+}
+.block4 .blockpixel:nth-child(3) {
+  left: 30px;
+  top: 30px;
+}
+.block4 .blockpixel:nth-child(4) {
+  top: 60px;
+}
+.block5 {
+  width: 120px;
+  height: 60px;
+}
+.block5 .blockpixel:nth-child(2) {
+  top: 30px;
+}
+.block5 .blockpixel:nth-child(3) {
+  top: 30px;
+  left: 30px;
+}
+.block5 .blockpixel:nth-child(4) {
+  top: 30px;
+  left: 60px;
+}
+.block5 .blockpixel:nth-child(5) {
+  top: 30px;
+  left: 90px;
 }
